@@ -1,0 +1,84 @@
+/**
+ * Add any custom CSS here.
+ *
+ * This file will be loaded after all theme stylesheets.
+ */
+
+.site-title,
+.site-header .g-top-bar,
+.site-header .g-top-bar input,
+.woocommerce-breadcrumb,
+.hentry .entry-header .posted-on a,
+.hentry .entry-header .byline a,
+.hentry .entry-meta a,
+.storefront-sorting,
+.single-product div.product .product_meta a,
+.single-product .woocommerce-tabs ul.tabs li a,
+.main-navigation ul.nav-menu li a,
+.main-navigation ul.nav-menu ul.sub-menu a,
+.sfb-footer-bar,
+.section-title {
+	font-family:"bryant-web",sans-serif;
+}
+
+h2.section-title,
+.secondary-navigation ul.menu a {
+	text-transform: uppercase;
+	letter-spacing: normal;
+	font-weight: normal !important;
+}
+
+h1,h1 a,
+h2,h2 a,
+h3,h3 a,
+h4,h4 a,
+h5,h5 a,
+h6,h6 a,
+.hentry .entry-meta a,
+.hentry .entry-header .posted-on a, .hentry .entry-header .byline a {
+	font-weight: normal;
+}
+
+body.woocommerce #primary { width: 100%; }
+.shipping_method {width:100%;}
+
+ul.products li.product .wc-new-badge {
+	position: absolute;
+    top: 1em;
+    left: 1em;
+}
+
+
+
+@media screen and (min-width: 768px) {
+	.woocommerce-active .site-header .g-top-bar * {
+	    font-size: 1.05em;
+	}
+	.site-main ul.products li.product {
+		padding-bottom: 6.8em;
+	}
+
+	ul.products li.product .wc-new-badge {
+	    top: -30px;
+	    left: 10px;
+	}
+
+	.site-main ul.products li.product .g-product-title {
+		opacity: .8;
+	}	
+}
+
+/* Navigation Menu */
+
+.main-navigation ul li a:hover {
+color: #d55028;
+}
+.secondary-navigation ul.menu a {
+font-weight:bold !important;
+color: #555;
+border: solid 1px transparent;
+}
+.secondary-navigation ul.menu a:hover {
+	color:#000;
+border: solid 1px #000;
+}
