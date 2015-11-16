@@ -102,6 +102,10 @@ border: solid 1px #000;
 .page-shop .sph-hero {background-position: 50% 10%;}
 .page-shop .sph-hero em {color:white;}
 
+/* We don't need no stinking shipping calculator */
+
+.woocommerce-shipping-calculator { display:none; }
+
 /* Responsive */
 
 @media screen and (min-width: 768px) {
