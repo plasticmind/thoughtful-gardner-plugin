@@ -84,6 +84,26 @@ border: solid 1px #000;
 	display: none !important;
 }
 
+/* Shop Page Hero */
+
+.page-shop .overlay.animated h1 {
+		/*font-size: 1.8em;*/
+}
+.page-shop .overlay.animated h1:after {
+	font-style: italic;
+	font-weight: normal;
+    font-family: "Libre Baskerville", "Georgia", serif;
+    letter-spacing: 1px;
+    color:white;
+    text-shadow: 1px 1px 1px #000;
+}
+.page-shop .sph-inner { padding-left: 4em !important; padding-right: 4em !important;}
+.page-shop .sph-hero .overlay { padding: 4em; }
+.page-shop .sph-hero {background-position: 50% 10%;}
+.page-shop .sph-hero em {color:white;}
+
+/* Responsive */
+
 @media screen and (min-width: 768px) {
 	.woocommerce-active .site-header .g-top-bar * {
 	    font-size: 1.05em;
