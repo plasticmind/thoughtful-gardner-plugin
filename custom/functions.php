@@ -49,3 +49,14 @@ function tg_free_shipping_notice() {
 
 	}
 }
+
+//Page Slug Body Class
+
+function add_shop_class( $classes ) {
+    if ( is_shop() ) {
+        //$classes[] = $post->post_type . '-' . $post->post_name;
+        $classes[] = 'page-shop';
+    }
+    return $classes;
+}
+add_filter( 'body_class', 'add_shop_class',1,3 );
