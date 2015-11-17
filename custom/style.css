@@ -134,7 +134,14 @@ border: solid 1px #000;
 	}
 
 }
-
+.outofstock {
+	opacity: .5;
+}
+.out-of-stock {
+	display: inline-block;
+	padding: 0.3em 1em;
+	border: solid 2px;
+}
 
 @media screen and (min-width: 570px) {
 	.woocommerce-active .site-header .g-top-bar * {
