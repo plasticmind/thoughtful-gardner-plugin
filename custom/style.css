@@ -134,9 +134,6 @@ border: solid 1px #000;
 	}
 
 }
-li.outofstock {
-	opacity: .5;
-}
 p.out-of-stock {
 	display: inline-block;
 	padding: 0.3em 1em;
