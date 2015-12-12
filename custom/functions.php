@@ -16,8 +16,12 @@ function tg_remove_footer_credit () {
 function tg_storefront_credit() {
 	?>
 	<div class="site-info">
-		&copy; <?php echo get_bloginfo( 'name' ) . ' ' . get_the_date( 'Y' ); ?> ~ <em>Thanks for supporting our little cottage industry!</em>
-		<section id="wpcom_social_media_icons_widget-5" class="widget widget_wpcom_social_media_icons_widget" title="Shift-click to edit this widget."><ul><li><a title="View thoughtfulgardner’s profile on Facebook" href="https://www.facebook.com/thoughtfulgardner/" class="genericon genericon-facebook" target="_blank"><span class="screen-reader-text">View thoughtfulgardner’s profile on Facebook</span></a></li><li><a title="View thoughtgardner’s profile on Twitter" href="https://twitter.com/thoughtgardner/" class="genericon genericon-twitter" target="_blank"><span class="screen-reader-text">View thoughtgardner’s profile on Twitter</span></a></li><li><a title="View thoughtfulgardner’s profile on Instagram" href="https://instagram.com/thoughtfulgardner/" class="genericon genericon-instagram" target="_blank"><span class="screen-reader-text">View thoughtfulgardner’s profile on Instagram</span></a></li></ul></section>
+	<a title="View thoughtfulgardner’s profile on Facebook" href="https://www.facebook.com/thoughtfulgardner/" class="fa fa-facebook fa-lg" target="_blank"></a>
+		<a title="View thoughtgardner’s profile on Twitter" href="https://twitter.com/thoughtgardner/" class="fa fa-twitter fa-lg" target="_blank"></a>
+		<a title="View thoughtfulgardner’s profile on Instagram" href="https://instagram.com/thoughtfulgardner/" class="fa fa-instagram fa-lg" target="_blank"></a>
+
+		~ &copy; <?php echo get_bloginfo( 'name' ) . ' ' . get_the_date( 'Y' ); ?> ~ <em>Thanks for supporting our little cottage industry!</em>
+			
 	</div><!-- .site-info -->
 	<?php
 }
@@ -27,6 +31,14 @@ function remove_sidebar_shop() {
 	if ( is_product() ) {
     	remove_action('storefront_sidebar', 'storefront_get_sidebar');
     }
+}
+
+// Add social icons
+
+add_action('wp_enqueue_scripts', 'tg_include_font_icons');
+
+function tg_include_font_icons() {
+    wp_enqueue_style('font-awesome',  '//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
 }
 
 // Replace logo
