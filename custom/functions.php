@@ -17,6 +17,7 @@ function tg_storefront_credit() {
 	?>
 	<div class="site-info">
 		&copy; <?php echo get_bloginfo( 'name' ) . ' ' . get_the_date( 'Y' ); ?> ~ <em>Thanks for supporting our little cottage industry!</em>
+		<section id="wpcom_social_media_icons_widget-5" class="widget widget_wpcom_social_media_icons_widget" title="Shift-click to edit this widget."><ul><li><a title="View thoughtfulgardner’s profile on Facebook" href="https://www.facebook.com/thoughtfulgardner/" class="genericon genericon-facebook" target="_blank"><span class="screen-reader-text">View thoughtfulgardner’s profile on Facebook</span></a></li><li><a title="View thoughtgardner’s profile on Twitter" href="https://twitter.com/thoughtgardner/" class="genericon genericon-twitter" target="_blank"><span class="screen-reader-text">View thoughtgardner’s profile on Twitter</span></a></li><li><a title="View thoughtfulgardner’s profile on Instagram" href="https://instagram.com/thoughtfulgardner/" class="genericon genericon-instagram" target="_blank"><span class="screen-reader-text">View thoughtfulgardner’s profile on Instagram</span></a></li></ul></section>
 	</div><!-- .site-info -->
 	<?php
 }
