@@ -57,8 +57,8 @@ add_action('woocommerce_cart_totals_before_shipping','tg_free_shipping_notice');
 
 function tg_free_shipping_notice() {
 
-	if ( WC()->cart->subtotal < 50 ) {
-		echo '<tr><td colspan="2"><b style="color:red;font-size:1.1em"><em><b>🎁 Order $50 or more and shipping is free!</b></em></td></tr>';
+	if ( WC()->cart->subtotal < 75 ) {
+		echo '<tr><td colspan="2"><b style="color:red;font-size:1.1em"><em><b>📦 Order $75 or more and shipping is free!</b></em></td></tr>';
 
 	}
 }
