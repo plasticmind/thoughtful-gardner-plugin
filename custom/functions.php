@@ -33,13 +33,6 @@ function remove_sidebar_shop() {
     }
 }
 
-add_action( 'after_setup_theme', 'tg_custom_setup_theme' );
- 
-function tg_custom_setup_theme() {
-add_theme_support( 'wc-product-gallery-zoom' );
-add_theme_support( 'wc-product-gallery-lightbox' );
-add_theme_support( 'wc-product-gallery-slider' );
-}
 
 // Add social icons
 
