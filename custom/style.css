@@ -140,6 +140,12 @@ p.out-of-stock {
 	border: solid 2px;
 }
 
+.backorder_notification, 
+.stock {
+	font-size: 80%;
+	font-style: italic;
+}
+
 @media screen and (min-width: 570px) {
 	.woocommerce-active .site-header .g-top-bar * {
 	    font-size: 1.05em;
