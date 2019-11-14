@@ -186,5 +186,5 @@ p.out-of-stock {
 }
 
 .page-shop .sph-hero .overlay.animated h1:after {
-    color: transparent;
+	display: none;
 }
