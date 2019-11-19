@@ -76,3 +76,9 @@ add_filter( 'body_class', 'add_shop_class',1,3 );
 
 /* STOP BEING SO AGGRESSIVE, WOOCOMMERCE */
 add_filter( ‘woocommerce_allow_marketplace_suggestions’, ‘__return_false’ );
+
+add_action( 'after_setup_theme', 'remove_woo_zoom', 100 );
+
+function remove_woo_zoom() { 
+remove_theme_support( 'wc-product-gallery-zoom' );
+}
