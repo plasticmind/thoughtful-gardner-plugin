@@ -188,3 +188,7 @@ p.out-of-stock {
 .page-shop .sph-hero .overlay.animated h1:after {
 	display: none;
 }
+
+#shipping_method li label, #shipping_method li input {
+    width: auto;
+}
